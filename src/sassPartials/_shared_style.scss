@@ -15,8 +15,9 @@
 
   @include transition;
 
+  // !important us being used to address Issue #32
   @include breakpoint-narrow {
-    padding: var(--ods-button-vertical-padding) var(--ods-button-horizontal-padding-medium);
+    padding: var(--ods-button-vertical-padding) var(--ods-button-horizontal-padding-medium) !important;
   }
 
   user-select: none;
