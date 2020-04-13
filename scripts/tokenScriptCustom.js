@@ -1,5 +1,6 @@
 const StyleDictionary = require('style-dictionary');
 const _ = require('lodash');
+const chalk = require('chalk');
 
 function variablesWithPrefix(prefix, properties) {
     return _.map(properties, function(prop) {
@@ -37,36 +38,6 @@ StyleDictionary.registerFormat({
 
 console.log('')
 console.log('Build started...');
-
-console.log('')
-console.log('         .         . ')
-console.log('               *       *')
-console.log('')
-console.log('                 * * *')
-console.log('                    !')
-console.log('               *       * ')
-console.log('')
-console.log(" ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗")
-console.log("██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║")
-console.log("██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║")
-console.log("██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║")
-console.log("╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║")
-console.log(" ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝")
-console.log('')
-console.log("██████╗ ███████╗███████╗██╗ ██████╗ ███╗   ██╗")
-console.log("██╔══██╗██╔════╝██╔════╝██║██╔════╝ ████╗  ██║")
-console.log("██║  ██║█████╗  ███████╗██║██║  ███╗██╔██╗ ██║")
-console.log("██║  ██║██╔══╝  ╚════██║██║██║   ██║██║╚██╗██║")
-console.log("██████╔╝███████╗███████║██║╚██████╔╝██║ ╚████║")
-console.log("╚═════╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝")
-console.log('')
-console.log("███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗")
-console.log("██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║")
-console.log("███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║")
-console.log("╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║")
-console.log("███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║")
-console.log("╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝")
-console.log('')
 
 // FINALLY, BUILD ALL THE PLATFORMS
 const componentConfig = StyleDictionary.extend('./scripts/componentConfigDist.json');
